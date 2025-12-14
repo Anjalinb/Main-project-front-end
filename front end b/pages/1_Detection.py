@@ -5,7 +5,7 @@ import time
 import io
 
 st.set_page_config(
-    page_title="Detection - Solar Panel Defect Detection",
+    page_title="Detection - PV Module Defect Detection",
     page_icon="🔍",
     layout="wide"
 )
@@ -58,7 +58,7 @@ st.markdown("""
 
 st.markdown("""
     <div class="detection-header">
-        <h1>🔍 Solar Panel Defect Detection</h1>
+        <h1>PV Module Defect Detection</h1>
         <p>Upload images or videos for AI-powered defect analysis</p>
     </div>
 """, unsafe_allow_html=True)
@@ -222,11 +222,17 @@ with st.expander("ℹ️ About Detection Process"):
         5. **Visualization**: Bounding box annotation and reporting
 
         **Supported Defect Types:**
-        - **Cracks**: Physical damage to panel surface
-        - **Hotspots**: Areas of excessive heat generation
-        - **Discoloration**: Color changes indicating degradation
-        - **Delamination**: Separation of panel layers
-        - **Snail Trails**: Silver/brown discoloration patterns
-        - **PID**: Potential Induced Degradation
-        - **Soiling**: Dirt and debris accumulation
+        - **Cracks**: Physical damage to the photovoltaic module surface
+
+        - **Hotspots**: Localized areas of excessive heat generation
+
+        - **Scratches**: Surface-level damage affecting panel durability
+
+        - **Broken Grids**: Damage to conductive grid lines reducing electrical efficiency
+
+        - **Defaced**: Visible surface markings or surface damage
+
+        - **Dust**: Accumulation of fine particles causing partial shading
+
+        - **Bird Droppings**: Localized soiling leading to temporary shading and power loss
     """)
