@@ -47,17 +47,16 @@ st.markdown("""
 
 st.markdown("""
     <div class="about-header">
-        <h1>ℹ️ About This Project</h1>
-        <p>Solar Panel Defect Detection System</p>
+        <h1>About This Project</h1>
+        <p>PV Module Defect Detection System</p>
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
     <div class="objective-box">
-        <h2>🎯 Project Objective</h2>
+        <h2> Project Objective</h2>
         <p style='font-size: 1.2rem; line-height: 1.8; margin-top: 1rem;'>
-            To develop an intelligent, AI-powered system that automatically detects and classifies defects
-            in solar panels using advanced computer vision and deep learning techniques. The system aims to
+            To develop an intelligent, AI-powered system that automatically detects and classifies defects in photovoltaic modules using deep learning–based computer vision techniques with an optimized YOLOv8 model. The system aims to
             improve solar panel quality assurance, reduce inspection time, and enhance the overall efficiency
             of solar energy infrastructure maintenance.
         </p>
@@ -76,8 +75,7 @@ with col1:
                 <span class="tech-badge">Python</span>
                 <span class="tech-badge">Streamlit</span>
                 <span class="tech-badge">Deep Learning</span>
-                <span class="tech-badge">Computer Vision</span>
-                <span class="tech-badge">OpenCV</span>
+                <span class="tech-badge">Plotly</span>
             </div>
         </div>
     """, unsafe_allow_html=True)
@@ -127,17 +125,17 @@ st.markdown("""
             <div>
                 <h4 style='color: #667eea;'>Physical Defects</h4>
                 <ul>
-                    <li><strong>Cracks:</strong> Micro and macro cracks in cells</li>
-                    <li><strong>Delamination:</strong> Layer separation</li>
-                    <li><strong>Broken Cells:</strong> Shattered or fractured cells</li>
+                    <li><strong>Cracks</strong></li>
+                    <li><strong>Scratches</strong> </li>
+                    <li><strong>Broken Grids</strong> </li>
                 </ul>
             </div>
             <div>
                 <h4 style='color: #667eea;'>Performance Defects</h4>
                 <ul>
-                    <li><strong>Hotspots:</strong> Areas of excessive heat</li>
-                    <li><strong>PID:</strong> Potential Induced Degradation</li>
-                    <li><strong>Discoloration:</strong> Visual degradation indicators</li>
+                    <li><strong>Hotspots</strong> </li>
+                    <li><strong>Dust</strong> </li>
+                    <li><strong>Bird Droppings</strong></li>
                 </ul>
             </div>
         </div>
@@ -150,7 +148,7 @@ st.markdown("""
     <div style='text-align: center; padding: 2rem; color: #666;'>
         <p style='font-size: 0.9rem;'>
             <strong>Version 1.0.0</strong> | Built with Streamlit & YOLOv8<br>
-            © 2024 Solar Panel Defect Detection System
+            © 2025 Solar Panel Defect Detection System
         </p>
     </div>
 """, unsafe_allow_html=True)
