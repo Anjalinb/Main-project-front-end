@@ -2,8 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-    page_title="Solar Panel Defect Detection",
-    page_icon="☀️",
+    page_title="PV Module Defect Detection",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -84,7 +83,7 @@ st.markdown("""
 
 st.markdown("""
     <div class="hero-section">
-        <div class="hero-title">☀️ Solar Panel Defect Detection System</div>
+        <div class="hero-title">PV Module Defect Detection System</div>
         <div class="hero-subtitle">AI-Powered Quality Assurance for Solar Energy Infrastructure</div>
     </div>
 """, unsafe_allow_html=True)
@@ -97,7 +96,7 @@ with col1:
             <div class="feature-icon">🔍</div>
             <div class="feature-title">Advanced Detection</div>
             <div class="feature-description">
-                State-of-the-art YOLOv8 model for accurate identification of solar panel defects including cracks, hotspots, and degradation.
+                State-of-the-art YOLOv8 model for accurate identification of solar panel defects including cracks, hotspots, and scratches.
             </div>
         </div>
     """, unsafe_allow_html=True)
