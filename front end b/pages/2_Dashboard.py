@@ -57,7 +57,7 @@ st.markdown("""
 np.random.seed(42)
 
 defect_data = pd.DataFrame({
-    'Defect Type': ['Cracks', 'Hotspots', 'Discoloration', 'Delamination', 'Snail Trails', 'PID', 'Soiling'],
+    'Defect Type': ['Cracks', 'Hotspots', 'Scratches', 'Broken grids', 'Defaced', 'Dust', 'Bird Droppings'],
     'Count': [145, 98, 76, 54, 43, 31, 89]
 })
 
@@ -285,7 +285,7 @@ st.markdown("### 📋 Recent Detection History")
 history_data = pd.DataFrame({
     'Timestamp': pd.date_range(end=pd.Timestamp.now(), periods=10, freq='H')[::-1],
     'Panel ID': [f'PANEL-{np.random.randint(1000, 9999)}' for _ in range(10)],
-    'Defect Type': np.random.choice(['Cracks', 'Hotspots', 'Discoloration', 'Delamination'], 10),
+    'Defect Type': np.random.choice(['Cracks', 'Hotspots', 'Broken Grids', 'Bird Droppings'], 10),
     'Severity': np.random.choice(['High', 'Medium', 'Low'], 10),
     'Confidence': np.random.uniform(0.70, 0.99, 10)
 })
